@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './Components/header/header.component';
 import { MasterComponent } from './Components/master/master.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -11,8 +12,9 @@ import { MasterComponent } from './Components/master/master.component';
     MasterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  exports:[HeaderComponent]
+  exports:[HeaderComponent,MasterComponent]
 })
 export class CoreModule { }

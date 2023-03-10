@@ -1,0 +1,49 @@
+.home {
+
+  .welcome-text {
+    letter-spacing: 5px;
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: normal;
+  }
+
+  .home-icon-wrapper {
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    margin-right: 10px;
+
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  .home-main-img-wrapper {
+    height: 700px;
+    width: 600px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .items {
+    margin: 0px 100px;
+
+    .icon-color{
+        color: #FFA500;
+    }
+  }
+}
