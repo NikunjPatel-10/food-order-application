@@ -4,11 +4,11 @@ import { LoginModule } from './user/login/login.module';
 import { RegistrationModule } from './user/registration/registration.module';
 const routes: Routes = [
 
-  {
-path:'',
-pathMatch:'full',
-redirectTo:'login'
-  },
+//   {
+// path:'',
+// pathMatch:'full',
+// redirectTo:'login'
+//   },
 
   { path: 'login', loadChildren: () => import('./user/login/login.module').then(m => m.LoginModule) }, 
   { path: 'registration', loadChildren: () => import('./user/registration/registration.module').then(m => m.RegistrationModule) }

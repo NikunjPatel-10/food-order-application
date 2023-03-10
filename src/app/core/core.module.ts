@@ -12,6 +12,7 @@ import { MasterComponent } from './Components/master/master.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports:[HeaderComponent]
 })
 export class CoreModule { }
