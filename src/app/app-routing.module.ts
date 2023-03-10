@@ -12,9 +12,8 @@ redirectTo:'login'
   },
 
 
-
-
-  { path: 'login', loadChildren: () => import('./user/login/login.module').then(m => m.LoginModule) }, { path: 'registration', loadChildren: () => import('./user/registration/registration.module').then(m => m.RegistrationModule) }];
+  { path: 'login', loadChildren: () => import('./user/login/login.module').then(m => m.LoginModule) }, 
+  { path: 'registration', loadChildren: () => import('./user/registration/registration.module').then(m => m.RegistrationModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
