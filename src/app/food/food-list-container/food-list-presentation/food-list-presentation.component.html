@@ -1,0 +1,13 @@
+<div class="h-100 pizza-list ">
+    <div class="row px-4">
+        <div *ngFor="let data of pizzaList" class=" mt-5 col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 ">
+            <div class="card " >
+                <img [src]="'./assets/Database/images/' + data.img" class="card-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.name}}</h5>
+                    <p class="card-text">{{data.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
