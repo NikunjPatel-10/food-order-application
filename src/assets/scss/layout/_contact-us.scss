@@ -1,0 +1,45 @@
+.contact-us-page{
+    background: url('./../../images/contact-us-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+    .contact{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        text-align: center;
+
+        .detail-text{
+            font-size: 18px;
+        }
+
+        .number-first{
+            line-height: 60px;
+        }
+        .number-first::after{
+            position: absolute;
+            content: "";
+            height: 2px;
+            background-color: rgb(221, 52, 52);
+            width: 50%;
+            margin-left: 15px;
+            top: 43%;
+            left:20%
+        }
+
+       .number-second::after{
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: rgb(221, 52, 52);
+        width: 50%;
+        margin-left: 15px;
+        top: 60%;
+        left: 20%;
+       }
+    }
+
+
+}
