@@ -29,6 +29,9 @@ const routes: Routes = [
       {
         path:'contact-us' ,
         component:ContactUsComponent
+      },
+      {
+        path:'food', loadChildren:()=>import('./food/food.module').then(m=>  m.FoodModule)
       }
     ]
 
