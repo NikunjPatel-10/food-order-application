@@ -29,18 +29,14 @@ const routes: Routes = [
       {
         path:'contact-us' ,
         component:ContactUsComponent
-      },
-      
-      { path: 'food', loadChildren: () => import('./food/food.module').then(m => m.FoodModule) }
+      }
     ]
 
   },
 
 
   { path: 'login', loadChildren: () => import('./user/login/login.module').then(m => m.LoginModule) },
-  { path: 'registration', loadChildren: () => import('./user/registration/registration.module').then(m => m.RegistrationModule) },
-
- 
+  { path: 'registration', loadChildren: () => import('./user/registration/registration.module').then(m => m.RegistrationModule) }
 ];
 
 @NgModule({
