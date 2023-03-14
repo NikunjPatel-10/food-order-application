@@ -1,0 +1,35 @@
+<div class="h-100  d-flex flex-column justify-content-center align-items-center">
+    <div>
+        <figure class="position-relative">
+            <img [src]="'./assets/Database/images/'+ foodDetail.img" alt="">
+            <span class="text-white img-name-text  p-3">{{foodDetail.name}}</span>
+        </figure>
+    </div>
+    <div>{{foodDetail.description}}</div>
+    <div class="d-flex mt-2">
+        <div class="d-flex bg-primary bg-opacity-25 px-3 me-2">
+            <figure class="pizza-icon-wrapper ">
+                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
+            </figure>
+            <span class="d-flex justify-content-center align-items-center "> Small</span>
+        </div>
+        <div class="d-flex bg-primary bg-opacity-25 px-3 me-2">
+            <figure  class="pizza-icon-wrapper ">
+                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
+            </figure>
+            <span>Medium</span>
+        </div>
+        <div class="d-flex bg-primary bg-opacity-25  px-3">
+            <figure class="pizza-icon-wrapper ">
+                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
+            </figure>
+            <span > Large</span>
+        </div>    
+    </div>
+
+    <div>
+        <span>Price :</span>
+        <span></span>
+    </div>
+    <button class="btn btn-danger mt-2">Add to Cart</button>
+</div>

@@ -1,0 +1,22 @@
+.img-name-text {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+}
+
+
+.pizza-icon-wrapper {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  margin-bottom: 0;
+
+  img {
+    // position: relative;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+  }
+}

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-food-list-presentation',
@@ -12,16 +13,20 @@ export class FoodListPresentationComponent implements OnInit {
     }
   }
 
-  public get pizzaList():any{
+  public get pizzaList(): any {
     return this._pizzaList
   }
-  
+
   private _pizzaList: any
-  constructor() {
+  constructor(private router: Router) {
 
   }
 
   ngOnInit(): void {
 
+  }
+
+  public getFood(id: number) {
+    this.router.navigate(['/food/item' , id])
   }
 }

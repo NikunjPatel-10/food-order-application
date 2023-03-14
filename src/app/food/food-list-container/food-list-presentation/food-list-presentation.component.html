@@ -6,7 +6,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{data.name}}</h5>
                     <p class="card-text text-truncate">{{data.description}}</p>
-                    <a href="#" class="btn btn-outline-danger w-100">Get Details</a>
+                    <button class="btn btn-outline-danger w-100" (click)="getFood(data.id)">Get details</button>
                 </div>
             </div>
         </div>

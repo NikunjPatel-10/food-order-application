@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FoodItemContainerComponent } from './food-item-container/food-item-container.component';
 import { FoodListContainerComponent } from './food-list-container/food-list-container.component';
 import { FoodComponent } from './food.component';
 
@@ -14,7 +15,16 @@ children:[
   {
     path:'list',
     component:FoodListContainerComponent
-  }
+  },
+  
+  // {
+  //   path:'detail',
+  //   component:FooddetailContainerComponent
+  // },
+ {
+  path:'item/:id',
+  component:FoodItemContainerComponent
+ }
 ]
 
 }];
