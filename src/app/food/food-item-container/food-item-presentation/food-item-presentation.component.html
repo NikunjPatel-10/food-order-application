@@ -1,35 +1,51 @@
 <div class="h-100  d-flex flex-column justify-content-center align-items-center">
-    <div>
-        <figure class="position-relative">
-            <img [src]="'./assets/Database/images/'+ foodDetail.img" alt="">
-            <span class="text-white img-name-text  p-3">{{foodDetail.name}}</span>
-        </figure>
-    </div>
-    <div>{{foodDetail.description}}</div>
-    <div class="d-flex mt-2">
-        <div class="d-flex bg-primary bg-opacity-25 px-3 me-2">
-            <figure class="pizza-icon-wrapper ">
-                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
-            </figure>
-            <span class="d-flex justify-content-center align-items-center "> Small</span>
-        </div>
-        <div class="d-flex bg-primary bg-opacity-25 px-3 me-2">
-            <figure  class="pizza-icon-wrapper ">
-                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
-            </figure>
-            <span>Medium</span>
-        </div>
-        <div class="d-flex bg-primary bg-opacity-25  px-3">
-            <figure class="pizza-icon-wrapper ">
-                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
-            </figure>
-            <span > Large</span>
-        </div>    
-    </div>
 
-    <div>
+    <div class="d-flex justify-content-center align-items-center">
+        <div>
+            <figure class=" detail-img-wrapper ">
+                <img [src]="'./assets/Database/images/'+ foodDetail.img" alt="pizza-image">
+            </figure>
+
+            <div class=" d-flex justify-content-between">
+                <span class=" fw-bold  p-2 bg-success bg-gradient ">{{foodDetail.name}}</span>
+                <span class="  fw-bold p-2 bg-success bg-gradient "> ₹ {{foodDetail.price}}</span>
+            </div>
+            <div>
+                <p>{{foodDetail.description}}</p>
+            </div>
+            <!-- <div class="d-flex mt-2">
+        <div class="d-flex text-white px-3 py-2 me-2 cursor-pointer active" (click)="showPrice(1)"
+            [ngClass]="pizzaPrice==125 ?'bg-danger':''">
+            <figure class="pizza-icon-wrapper ">
+                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
+            </figure>
+            <span class="pizza-size ms-2">Small</span>
+        </div>
+        <div class="d-flex text-white px-3 py-2 me-2 cursor-pointer" (click)="showPrice(2)"
+            [ngClass]="pizzaPrice==250 ?'bg-danger':''">
+            <figure class="pizza-icon-wrapper ">
+                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
+            </figure>
+            <span class="pizza-size ms-2">Medium</span>
+        </div>
+        <div class="d-flex text-white py-2 px-3 cursor-pointer" (click)="showPrice(3)"
+            [ngClass]=" pizzaPrice==400 ? 'bg-danger':''">
+
+            <figure class="pizza-icon-wrapper ">
+                <img src="./../../../../assets/images/pizza-icon.png" alt="" srcset="">
+            </figure>
+            <span class="pizza-size"> Large</span>
+        </div>
+    </div> -->
+
+            <!-- <div>
         <span>Price :</span>
-        <span></span>
+        <span >{{pizzaPrice}}
+        </span>
+    </div> -->
+            <div class="w-100 text-center">
+                <button class=" btn btn-danger btn-lg mt-2 text-center">Add to Cart</button>
+            </div>
+        </div>
     </div>
-    <button class="btn btn-danger mt-2">Add to Cart</button>
 </div>

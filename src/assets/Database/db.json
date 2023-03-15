@@ -4,37 +4,43 @@
             "id":1,
             "name": "Cheese Pizza",
             "description":"Get our Manhattan Classic Cheese Pizza with your choice of sauce and crust",
-            "img":"cheesy-pizza.jpg"
+            "img":"cheesy-pizza.jpg",
+            "price":"250"
         },
         {
             "id":2,
             "name": "Pepperoni Pizza",
             "description":"Get our  Classic Pepperoni Pizza with your choice of sauce and crust",
-            "img":"pepperoni-pizza.jpg"
+            "img":"pepperoni-pizza.jpg",
+            "price":"350"
         },
         {
             "id":3,
             "name": "Vegetarian Pizza",
             "description":"Tomato Sauce , Mozzarella, Green Pepper, Onion, Fresh Mushrooms, Tomatoes and Black Olives",
-            "img":"vegetarian-pizza.jpg"
+            "img":"vegetarian-pizza.jpg",
+            "price":"450"
         },
         {
             "id":4,
             "name": "Rustica Pizza",
             "description":"Tomato Sauce , Mozzarella, sausage, crispy, bacon, roasted red peppers, and black olives",
-            "img":"rustica-pizza.jpg"
+            "img":"rustica-pizza.jpg",
+            "price":"300"
         },
         {
             "id":5,
             "name": "Delicious Pizza",
             "description":"A mix of Porcini Mushrooms and Decadent Truffle Paste , Mozzarella , Fresh Mushrooms, Caramelized Onions",
-            "img":"Delicious-pizza.jpg"
+            "img":"Delicious-pizza.jpg",
+            "price":"250"
         },
         {
             "id":6,
             "name": "Tomato Pizza",
             "description":"The Classic Marinara Sauce, Roma Tomatoes, Fresh Mozzarella, Fresh Basil, and an Extra Virgin Olive Oil drizzle",
-            "img":"tomato-pizza.jpg"
+            "img":"tomato-pizza.jpg",
+            "price":"400"
         }
         
     ]
