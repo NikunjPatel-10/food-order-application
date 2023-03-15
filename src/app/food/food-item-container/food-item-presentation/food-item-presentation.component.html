@@ -1,12 +1,12 @@
 <div class="h-100  d-flex flex-column justify-content-center align-items-center">
 
-    <div class="d-flex justify-content-center align-items-center">
-        <div>
-            <figure class=" detail-img-wrapper ">
-                <img [src]="'./assets/Database/images/'+ foodDetail.img" alt="pizza-image">
+    <div class="pizza-detail-size">
+     
+            <figure class=" mb-0">
+                <img [src]="'./assets/Database/images/'+ foodDetail.img" alt="pizza-image" class="w-100">
             </figure>
 
-            <div class=" d-flex justify-content-between">
+            <div class=" d-flex justify-content-between mt-3">
                 <span class=" fw-bold  p-2 bg-success bg-gradient ">{{foodDetail.name}}</span>
                 <span class="  fw-bold p-2 bg-success bg-gradient "> ₹ {{foodDetail.price}}</span>
             </div>
@@ -46,6 +46,6 @@
             <div class="w-100 text-center">
                 <button class=" btn btn-danger btn-lg mt-2 text-center">Add to Cart</button>
             </div>
-        </div>
+       
     </div>
 </div>
